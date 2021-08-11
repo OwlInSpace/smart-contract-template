@@ -1,6 +1,6 @@
-# Hardhat project template
+# Smart contract template
 
-A simple hardhat project template, with solhint, solcover, eslint, typescipt and prettier
+A simple smart contract template using hardhat. With solhint, solcover, eslint, typescipt and prettier
 
 ## Requirements:
 
