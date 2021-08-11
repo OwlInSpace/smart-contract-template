@@ -29,26 +29,26 @@ export default {
   networks: {
     localhost: {
       url: `http://localhost:8545`,
-      accounts: [secrets.localPrivateKey],
+      accounts: secrets.localPrivateKey ? [secrets.localPrivateKey] : [],
     },
     mainnet: {
       url: `https://mainnet.infura.io/v3/${secrets.infuraApiKey}`,
       chainId: 1,
       gasPrice: config.mainnetGasPrice,
-      accounts: [secrets.mainnetPrivateKey],
+      accounts: secrets.mainnetPrivateKey ? [secrets.mainnetPrivateKey] : [],
     },
     testnet: {
       url: `https://rinkeby.infura.io/v3/${secrets.infuraApiKey}`,
       chainId: 4,
       gasPrice: config.testnetGasPrice,
-      accounts: [secrets.testnetPrivateKey],
+      accounts: secrets.testnetPrivateKey ? [secrets.testnetPrivateKey] : [],
     },
   },
   gasReporter: {
     currency: "USD",
     gasPrice: config.mainnetGasPrice,
     enabled: config.reportGas ? true : false,
-    coinmarketcap: secrets.coinMarketCapApiKey,
+    coinmarketcap: secrets.coinMarketCapApiKey || null,
     maxMethodDiff: 10,
   },
   typechain: {
@@ -59,6 +59,6 @@ export default {
     timeout: 250e3,
   },
   etherscan: {
-    apiKey: secrets.etherscanApiKey,
+    apiKey: secrets.etherscanApiKey || null,
   },
 }
