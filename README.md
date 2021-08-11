@@ -6,7 +6,7 @@ A simple smart contract template using hardhat. With solhint, solcover, eslint, 
 
 Node.js
 
-## Config
+## Config:
 
 Secrets: Rename the secrets.json.dist to secrets.json and put in the values
 
