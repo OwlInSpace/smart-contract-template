@@ -30,6 +30,7 @@ export default {
     hardhat: {
       forking: {
         url: `https://mainnet.infura.io/v3/${secrets.infuraApiKey}`,
+        blockNumber: config.forkBlock || 13018600,
       },
     },
     localhost: {
