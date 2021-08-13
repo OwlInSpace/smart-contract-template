@@ -4,7 +4,9 @@ A simple smart contract template using hardhat. With solhint, solcover, eslint, 
 
 ## Requirements:
 
-Node.js
+Node.js (https://nodejs.dev/)
+
+Optionally: Yarn (https://yarnpkg.com/)
 
 ## Config:
 
