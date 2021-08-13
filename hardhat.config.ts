@@ -29,7 +29,7 @@ export default {
   networks: {
     hardhat: {
       forking: {
-        url: '`https://mainnet.infura.io/v3/${secrets.infuraApiKey}`'
+        url: `https://mainnet.infura.io/v3/${secrets.infuraApiKey}`
       }
     },
     localhost: {
