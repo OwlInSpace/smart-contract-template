@@ -27,6 +27,11 @@ export default {
     ],
   },
   networks: {
+    hardhat: {
+      forking: {
+        url: '`https://mainnet.infura.io/v3/${secrets.infuraApiKey}`'
+      }
+    },
     localhost: {
       url: `http://localhost:8545`,
       accounts: secrets.localPrivateKey ? [secrets.localPrivateKey] : [],
