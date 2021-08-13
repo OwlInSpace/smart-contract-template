@@ -39,13 +39,13 @@ export default {
     mainnet: {
       url: `https://mainnet.infura.io/v3/${secrets.infuraApiKey}`,
       chainId: 1,
-      gasPrice: config.mainnetGasPrice,
+      gasPrice: config.mainnetGasPrice * 1e9,
       accounts: secrets.mainnetPrivateKey ? [secrets.mainnetPrivateKey] : [],
     },
     testnet: {
       url: `https://rinkeby.infura.io/v3/${secrets.infuraApiKey}`,
       chainId: 4,
-      gasPrice: config.testnetGasPrice,
+      gasPrice: config.testnetGasPrice * 1e9,
       accounts: secrets.testnetPrivateKey ? [secrets.testnetPrivateKey] : [],
     },
   },
