@@ -2,5 +2,6 @@
   "compilerVersion": "0.8.4",
   "mainnetGasPrice": 40,
   "testnetGasPrice": 2,
+  "forkBlock": 13018600,
   "reportGas": true
 }
