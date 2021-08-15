@@ -1,6 +1,5 @@
 import { ethers } from "hardhat"
 import { Contract } from "../typechain/Contract"
-import { describe, it } from "mocha"
 import { expect } from "chai"
 
 let contract: Contract
