@@ -4,11 +4,12 @@ import chalk from "chalk"
 
 const deployContract = async function (
   hre: HardhatRuntimeEnvironment,
-  name: string
+  name: string,
+  ...args: any[]
 ): Promise<Contract> {
   console.log(chalk.white.bold`\n ${name} deployment`)
   const _contract = await hre.ethers.getContractFactory(name)
-  const contract = await _contract.deploy()
+  const contract = await _contract.deploy(...args)
   console.log(
     chalk.blackBright`   {white {bold ◌} Deploy transaction hash:} ${contract.deployTransaction.hash}`
   )
