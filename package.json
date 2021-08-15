@@ -15,8 +15,8 @@
     "deploy:mainnet": "hardhat deploy --network mainnet",
     "lint": "eslint '**/**.ts' --ignore-path './.eslintignore' && solhint 'contracts/**/*.sol'",
     "lint:fix": "eslint --fix '**/**.ts' --ignore-path './.eslintignore' && solhint --fix 'contracts/**/*.sol'",
-    "format:fix": "prettier --write '**/**.*' --plugin-search-dir='./node_modules'",
-    "format": "prettier --check '**/**.*' --plugin-search-dir='./node_modules'",
+    "format:fix": "prettier --write '**/**.*' --plugin-search-dir= './node_modules'",
+    "format": "prettier --check '**/**.*' --plugin-search-dir= './node_modules'",
     "verify:testnet": "hardhat verify --network testnet",
     "verify:mainnet": "hardhat verify --network mainnnet"
   },
