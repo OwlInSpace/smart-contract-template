@@ -28,6 +28,8 @@ export default {
   },
   networks: {
     hardhat: {
+      initialBaseFeePerGas: 0, /* Fix for: https://github.com/sc-forks/solidity-coverage/issues/652 */,
+      blockGasLimit: 60000000,
       forking: {
         url: secrets.mainnetNodeURI,
         blockNumber: config.forkBlock || 13018600,
