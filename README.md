@@ -6,7 +6,7 @@ A simple smart contract template using hardhat. With solhint, solcover, eslint, 
 
 Node.js (https://nodejs.dev/)
 
-Optionally: Yarn (https://yarnpkg.com/)
+Optionally: Pnpm (https://pnpm.io/)
 
 ## Config:
 
@@ -16,52 +16,52 @@ Config: Change config in config.json
 
 ## First:
 
-    yarn
+    pnpm install
 
 ## Available Scripts:
 
-### `yarn test`
+### `pnpm run test`
 
-### `yarn test:testnet`
+### `pnpm run test:testnet`
 
 Runs tests in the `test` directory, on a local network or on testnet
 
-### `yarn compile`
+### `pnpm run compile`
 
 Compiles all the soliidity contracts
 
-### `yarn typechain`
+### `pnpm run typechain`
 
 Use typechain to generate types for the solidity contracts
 
-### `yarn coverage`
+### `pnpm run coverage`
 
 Generate code coverage for the contracts
 
-### `yarn deploy`
+### `pnpm run deploy`
 
-### `yarn deploy:testnet`
+### `pnpm run deploy:testnet`
 
-### `yarn deploy:mainnet`
+### `pnpm run deploy:mainnet`
 
 Deploy contracts, deploy scripts in ./deploy/
 
 Can be done on mainnet, testnet, or the local network
 
-### `yarn lint`
+### `pnpm run lint`
 
-### `yarn lint:fix`
+### `pnpm run lint:fix`
 
 Lints the solidity and typescript code
 
-### `yarn format`
+### `pnpm run format`
 
-### `yarn format:fix`
+### `pnpm run format:fix`
 
 Formats the solidity and typescript code
 
-### `yarn verify:testnet <address>`
+### `pnpm run verify:testnet <address>`
 
-### `yarn verify:mainnet <address>`
+### `pnpm run verify:mainnet <address>`
 
 Verfies the contracts on etherscan
