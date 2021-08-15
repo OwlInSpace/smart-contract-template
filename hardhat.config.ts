@@ -37,19 +37,19 @@ export default {
     },
     localhost: {
       url: `http://localhost:8545`,
-      accounts: secrets.localPrivateKey ? [secrets.localPrivateKey] : [],
+      accounts: secrets.localPrivateKeys || [],
     },
     mainnet: {
       url: secrets.mainnetNodeURI,
       chainId: 1,
       gasPrice: config.mainnetGasPrice * 1e9,
-      accounts: secrets.mainnetPrivateKey ? [secrets.mainnetPrivateKey] : [],
+      accounts: secrets.mainnetPrivateKeys || [],
     },
     testnet: {
       url: secrets.testnetNodeURI,
       chainId: 4,
       gasPrice: config.testnetGasPrice * 1e9,
-      accounts: secrets.testnetPrivateKey ? [secrets.testnetPrivateKey] : [],
+      accounts: secrets.testnetPrivateKeys || [],
     },
   },
   gasReporter: {
