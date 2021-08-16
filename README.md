@@ -20,48 +20,48 @@ Config: Change config in config.json
 
 ## Available Scripts:
 
-### `pnpm run test`
+### `pnpm test`
 
-### `pnpm run test:testnet`
+### `pnpm test:testnet`
 
 Runs tests in the `test` directory, on a local network or on testnet
 
-### `pnpm run compile`
+### `pnpm compile`
 
 Compiles all the soliidity contracts
 
-### `pnpm run typechain`
+### `pnpm typechain`
 
 Use typechain to generate types for the solidity contracts
 
-### `pnpm run coverage`
+### `pnpm coverage`
 
 Generate code coverage for the contracts
 
-### `pnpm run deploy`
+### `pnpm deploy`
 
-### `pnpm run deploy:testnet`
+### `pnpm deploy:testnet`
 
-### `pnpm run deploy:mainnet`
+### `pnpm deploy:mainnet`
 
 Deploy contracts, deploy scripts in ./deploy/
 
 Can be done on mainnet, testnet, or the local network
 
-### `pnpm run lint`
+### `pnpm lint`
 
-### `pnpm run lint:fix`
+### `pnpm lint:fix`
 
 Lints the solidity and typescript code
 
-### `pnpm run format`
+### `pnpm format`
 
-### `pnpm run format:fix`
+### `pnpm format:fix`
 
 Formats the solidity and typescript code
 
-### `pnpm run verify:testnet <address>`
+### `pnpm verify:testnet <address>`
 
-### `pnpm run verify:mainnet <address>`
+### `pnpm verify:mainnet <address>`
 
 Verfies the contracts on etherscan
