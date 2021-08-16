@@ -1,4 +1,4 @@
-export async function shouldRevert(func: () => void, errorMessage: string) {
+export async function shouldRevert(func: () => void, errorMessage?: string) {
     try {
         await func()
     } catch {
