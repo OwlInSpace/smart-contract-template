@@ -5,7 +5,7 @@ import chalk from "chalk"
 const deployContract = async function (
   hre: HardhatRuntimeEnvironment,
   name: string,
-  ...args: any[]
+  ...args: any[] // eslint-disable-line @typescript-eslint/no-explicit-any
 ): Promise<Contract> {
   console.log(chalk.white.bold`\n ${name} deployment`)
   const _contract = await hre.ethers.getContractFactory(name)
