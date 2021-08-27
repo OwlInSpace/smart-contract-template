@@ -2,9 +2,13 @@
 pragma solidity ^0.8.0;
 
 contract Contract {
-    uint256 private constant RETURNS = 2;
+    uint256 private num;
 
-    function test() external pure returns (uint256) {
-        return RETURNS;
+    function get() external view returns (uint256) {
+        return num;
+    }
+
+    function set(uint256 newNum) external {
+        num = newNum;
     }
 }
