@@ -4,7 +4,7 @@ import deployContract from "../scripts/deployContract"
 import { Contract } from "../typechain/Contract"
 
 const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
-  const c = <Contract> await deployContract(hre, "Contract")
+  const c = <Contract> await deployContract(hre, "Contract", 0)
   await c.set(2)
 }
 
