@@ -3,16 +3,21 @@ import { Contract } from "../typechain/Contract"
 import { expect } from "chai"
 
 let contract: Contract
-describe("Deployment", function () {
-  it("Deploy contract", async function () {
+describe("Deployment", () => {
+  it("Deploy contract", async () => {
     const _Contract = await ethers.getContractFactory("Contract")
-    contract = <Contract>await _Contract.deploy()
+    contract = <Contract>await _Contract.deploy(0)
     await contract.deployed()
   })
 })
 
-describe("Testing", function () {
-  it("Returns correctly", async function () {
-    expect(await contract.test()).to.equal(2)
+describe("Set and get number", () => {
+  it("Default is 0", async () => {
+    expect(await contract.get()).to.be.equal(0)
+  })
+
+  it("Set changes number", async () => {
+    await contract.set(2)
+    expect(await contract.get()).to.be.equal(2)
   })
 })
