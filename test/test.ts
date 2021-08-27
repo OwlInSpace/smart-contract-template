@@ -6,7 +6,7 @@ let contract: Contract
 describe("Deployment", () => {
   it("Deploy contract", async () => {
     const _Contract = await ethers.getContractFactory("Contract")
-    contract = <Contract>await _Contract.deploy()
+    contract = <Contract>await _Contract.deploy(0)
     await contract.deployed()
   })
 })
