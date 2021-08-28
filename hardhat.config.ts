@@ -19,8 +19,8 @@ export default {
         version: config.compilerVersion,
         settings: {
           optimizer: {
-            enabled: true,
-            runs: 200,
+            enabled: config.optimizerRuns != 0,
+            runs: config.optimizerRuns,
           },
         },
       },
@@ -30,7 +30,7 @@ export default {
     hardhat: {
       initialBaseFeePerGas: 0 /* Fix for: https://github.com/sc-forks/solidity-coverage/issues/652 */,
       blockGasLimit: 60000000,
-      ...(config.forkMainnet
+      ...(config.forkBlock != 0
         ? {
             forking: {
               url: secrets.mainnetNodeURI,
