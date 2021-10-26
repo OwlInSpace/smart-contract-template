@@ -1,4 +1,4 @@
-# Smart contract template
+# DEPRECATED- Smart contract template
 
 A simple smart contract template using hardhat. With solhint, solcover, eslint, typescipt and prettier
 
